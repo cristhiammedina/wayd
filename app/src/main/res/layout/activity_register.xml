@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginVertical="50dp"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|clip_vertical"
+        android:layout_marginVertical="5dp"
+        app:srcCompat="@drawable/drawable_login_perfil"
+        android:contentDescription="@string/foto_de_pefil" />
+
+    <TextView
+        android:id="@+id/txtNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="2sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/crear_cuenta"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="2sp"
+        app:srcCompat="@drawable/drawable_loginlinea"
+        android:contentDescription="@string/barra_diseno" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nombre"
+        android:layout_gravity="center"
+        android:textColor="@color/silver"
+        android:textSize="17sp"
+        android:paddingStart="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/drawable_circular_button_seven"
+        android:paddingLeft="25dp"
+        tools:ignore="LabelFor,RtlSymmetry"
+        android:autofillHints="@string/nombre" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/apellido"
+        android:layout_gravity="center"
+        android:textColor="@color/silver"
+        android:textSize="17sp"
+        android:paddingStart="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/drawable_circular_button_seven"
+        android:paddingLeft="25dp"
+        tools:ignore="LabelFor,RtlSymmetry"
+        android:autofillHints="@string/apellido" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:hint="@string/correo"
+        android:textColor="@color/silver"
+        android:textSize="17sp"
+        android:paddingStart="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/drawable_circular_button_seven"
+        android:paddingLeft="25dp"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="@string/correo" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/contrase_a_two"
+        android:layout_gravity="center"
+        android:textColor="@color/silver"
+        android:textSize="17sp"
+        android:paddingStart="25dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/drawable_circular_button_seven"
+        android:paddingLeft="25dp"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="@string/contrase_a_two" />
+
+    <ImageButton
+        android:id="@+id/CreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/drawable_login_arrow"
+        android:background="@color/white"
+        android:onClick="register"
+        tools:ignore="OnClick"
+        android:contentDescription="@string/button_register" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

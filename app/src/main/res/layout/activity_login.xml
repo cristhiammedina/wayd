@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginVertical="80dp"
+    android:background="@color/white"
+    tools:context=".LoginActivity"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15sp"
+        app:srcCompat="@drawable/drawable_logo_login"
+        android:contentDescription="@string/logo" />
+
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="5sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/nombre_de_usuario"
+        android:textColor="@color/silver"
+        android:textSize="17sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColorHint="@color/silver"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/drawable_loginname"
+        android:background="@drawable/drawable_circular_button_two"
+        android:paddingLeft="12dp"
+        android:drawableLeft="@drawable/drawable_loginname"
+        tools:ignore="RtlSymmetry"
+        android:autofillHints="@string/nombre_de_usuario" />
+
+
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/contrase_a"
+        android:textColor="@color/silver"
+        android:textSize="17sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColorHint="@color/silver"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/drawable_loginpassword"
+        android:background="@drawable/drawable_circular_button_two"
+        tools:ignore="RtlSymmetry"
+
+        android:paddingLeft="12dp"
+        android:drawableLeft="@drawable/drawable_loginpassword"
+        android:autofillHints="@string/contrase_a" />
+
+    <TextView
+        android:onClick="register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_cuenta"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:onClick="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15sp"
+        android:text="@string/ingresar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/drawable_circular_button"
+        tools:ignore="OnClick" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginVertical="15sp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/drawable_login_facebook"
+            android:background="@color/white"
+            android:layout_marginRight="30sp"
+            android:contentDescription="@string/facebook"
+            android:layout_marginEnd="30sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:srcCompat="@drawable/drawable_login_instagram"
+            android:layout_marginRight="30sp"
+            android:contentDescription="@string/instagram"
+            android:layout_marginEnd="30sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/drawable_login_whatsapp"
+            android:background="@color/white"
+            android:contentDescription="@string/whatsapp" />
+    </LinearLayout>
+
+    <TextView
+        android:onClick="forgotPasword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/olvidaste_tu_contrase_a"
+        android:layout_marginVertical="10sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        tools:ignore="OnClick" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

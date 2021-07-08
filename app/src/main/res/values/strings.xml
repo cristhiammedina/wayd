@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">wayd</string>
+    <string name="nombre_de_usuario">NOMBRE DE USUARIO</string>
+    <string name="facebook">facebook</string>
+    <string name="instagram">instagram</string>
+    <string name="whatsapp">whatsapp</string>
+    <string name="olvidaste_tu_contraseña">¿Olvidaste tú contraseña?</string>
+    <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="logo">logo</string>
+    <string name="contrase_a">CONTRASEÑA</string>
+    <string name="apellido">Apellido</string>
+    <string name="contrase_a_two">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="nombre">Nombre</string>
+    <string name="foto_de_pefil">foto_de_pefil</string>
+    <string name="barra_diseno">barra_diseno</string>
+    <string name="button_register">button_register</string>
+    <string name="enviar">Enviar</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tú contraseña?</string>
+    <string name="_three">CORREO</string>
+</resources>
