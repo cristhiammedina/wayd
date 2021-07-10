@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
 import android.widget.ProgressBar
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -29,6 +30,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun forgotPasword(view: View) {
+        startActivity(Intent(this,Forget_password_Activity::class.java))
 
     }
     fun register(view: View) {
@@ -36,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
 
     }
     fun login(view: View) {
+        loginUser()
 
     }
 
@@ -49,7 +52,10 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener(this){
                     task->
 
-                    if (task.isSuccessful){
+                    if (task.isSuccessful) {
+                        action()
+                    }else{
+                        Toast.makeText(this, "Error al enviar el autenticacion", Toast.LENGTH_SHORT).show()
 
 
                     }
@@ -59,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
     private fun action(){
-//        startActivity(Intent(this,))
+        startActivity(Intent(this,ProfileActivity::class.java))
 
     }
 }

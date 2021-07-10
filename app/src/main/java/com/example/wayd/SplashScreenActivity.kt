@@ -2,13 +2,10 @@ package com.example.wayd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 
-class ForgetYourPasswordActivity : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forget_your_password)
+        setContentView(R.layout.activity_splash_screen)
     }
-
-    fun send(view: View) {}
 }
