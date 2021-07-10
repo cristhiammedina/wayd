@@ -59,19 +59,22 @@ class RegisterActivity : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) {
                    task ->
-                    if(task.isComplete){
-                        val user:FirebaseUser?=auth.currentUser
-                        verifyEmail(user)
+                    if(task.isSuccessful){
 
-                        val userBD= user?.uid?.let { dbReference.child(it) }
+//                        val user:FirebaseUser?=auth.currentUser
+//                        verifyEmail(user)
+//
+//                        val userBD= user?.uid?.let { dbReference.child(it) }
+//
+//                        if (userBD != null) {
+//                            userBD.child("Name").setValue(name)
+//                        }
+//                        if (userBD != null) {
+//                            userBD.child("LastName").setValue(lastname)
+//                        }
 
-                        if (userBD != null) {
-                            userBD.child("Name").setValue(name)
-                        }
-                        if (userBD != null) {
-                            userBD.child("LastName").setValue(lastname)
-                        }
                         action()
+                        Toast.makeText(this,"usuario resgistrado exitosamente",Toast.LENGTH_LONG).show()
 
                     }
                 }

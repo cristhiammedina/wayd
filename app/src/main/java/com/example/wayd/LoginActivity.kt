@@ -9,8 +9,6 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 
 class LoginActivity : AppCompatActivity() {
 
@@ -30,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun forgotPasword(view: View) {
-        startActivity(Intent(this,Forget_password_Activity::class.java))
+        startActivity(Intent(this,ForgetPasswordActivity::class.java))
 
     }
     fun register(view: View) {

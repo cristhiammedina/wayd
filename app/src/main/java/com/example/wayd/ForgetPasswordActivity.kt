@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.core.view.isInvisible
 import com.google.firebase.auth.FirebaseAuth
 
-class Forget_password_Activity : AppCompatActivity() {
+class ForgetPasswordActivity : AppCompatActivity() {
 
     private lateinit var txtEmail: EditText
     private lateinit var progressBar: ProgressBar

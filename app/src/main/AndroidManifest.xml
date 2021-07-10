@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_wayd"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Forget_password_Activity"></activity>
-        <activity android:name=".professional_company_Activity" />
+        <activity android:name=".ForgetPasswordActivity"></activity>
+        <activity android:name=".ProfessionalCompanyActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".SplashScreen_twoActivity" />
+        <activity android:name=".SplashScreenTwoActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">

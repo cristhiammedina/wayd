@@ -35,4 +35,7 @@
     <string name="olvidaste_t_contrase_a">¿Olvidaste tú contraseña?</string>
     <string name="correo_forget_password">CORREO</string>
     <string name="enviar">Enviar</string>
+    <string name="trabaja_a_tu_ritmo">trabaja a tu ritmo</string>
+    <string name="contrata_de_manera_segura">contrata de manera segura</string>
+    <string name="reg_strate_como_empresa">Regístrate como Empresa</string>
 </resources>
