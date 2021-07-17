@@ -4,11 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
 
@@ -24,7 +27,8 @@ class LoginActivity : AppCompatActivity() {
         txtUser=findViewById(R.id.txtUser)
         txtPassword=findViewById(R.id.txtPassword)
         progressBar=findViewById(R.id.progressBar)
-        auth= FirebaseAuth.getInstance()
+        //auth= FirebaseAuth.getInstance()
+        auth= Firebase.auth
     }
 
     fun forgotPasword(view: View) {
@@ -54,6 +58,7 @@ class LoginActivity : AppCompatActivity() {
                         action()
                     }else{
                         Toast.makeText(this, "Error al enviar el autenticacion", Toast.LENGTH_SHORT).show()
+                        Log.w("LOGIN", "createUserWithEmail:failure", task.exception)
 
 
                     }
